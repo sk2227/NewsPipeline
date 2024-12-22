@@ -1,5 +1,7 @@
 package com.sahilkamat;
 
+import com.sahilkamat.services.ArticleScrapperService;
+
 /**
  * Hello world!
  *
@@ -8,6 +10,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        ArticleScrapperService asp= new ArticleScrapperService();
+        asp.fetchArticles();
     }
 }
