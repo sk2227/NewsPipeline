@@ -10,7 +10,11 @@ public class BrowserCapabilities {
         return "Build-" + System.currentTimeMillis();
     }
 
+    static String buildVersion = generateBuildName();
+
+
     public static DesiredCapabilities getDesktopCapabilities(String os, String osVersion, String browser, String browserVersion) {
+
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("browserName", browser);
         caps.setCapability("browserVersion", browserVersion);
@@ -20,8 +24,8 @@ public class BrowserCapabilities {
         browserstackOptions.put("osVersion", osVersion);
         browserstackOptions.put("projectName", "NewsPipeline");
 
-        String buildName = generateBuildName();
-        browserstackOptions.put("buildName", buildName);
+        //String buildName = generateBuildName();
+        browserstackOptions.put("buildName", buildVersion);
         browserstackOptions.put("sessionName", "Desktop Test");
 
         // Attach BrowserStack options to capabilities
@@ -42,9 +46,8 @@ public class BrowserCapabilities {
         browserstackOptions.put("projectName", "NewsPipeline");
 
 
-        String buildName = generateBuildName();
 
-        browserstackOptions.put("buildName", buildName); // Set the unique build name for each session
+        browserstackOptions.put("buildName", buildVersion); // Set the unique build name for each session
         browserstackOptions.put("sessionName", "Mobile Test");
 
         caps.setCapability("bstack:options", browserstackOptions);

@@ -348,3 +348,178 @@
 2024-12-23 14:29:11 [pool-1-thread-1] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-1] Article[title='En Navidad, volver a Schütz', content='La música del más grande compositor alemán del XVII es la que mejor refleja lo que celebramos en verdad en estas fechas', translatedTitle='At Christmas, return to Schütz']
 2024-12-23 14:29:11 [pool-1-thread-1] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-1] Article[title='La bondad de un robot salvaje', content='Uno de los retos que deberemos afrontar es programar la inteligencia artificial con unos principios éticos comunes', translatedTitle='The kindness of a wild robot']
 2024-12-23 14:29:11 [pool-1-thread-1] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-1] Article[title='‘Las tres fronteras’', content='Este proyecto fotográfico documenta los límites entre Malí, Níger y Burkina Faso, epicentro del conflicto que devasta el Sahel', translatedTitle=''The three borders'']
+2024-12-23 16:53:37 [pool-1-thread-4] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-4] Navigated to website: https://elpais.com/
+2024-12-23 16:53:39 [pool-1-thread-1] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-1] Navigated to website: https://elpais.com/
+2024-12-23 16:53:39 [pool-1-thread-5] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-5] Navigated to website: https://elpais.com/
+2024-12-23 16:53:40 [pool-1-thread-2] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-2] Navigated to website: https://elpais.com/
+2024-12-23 16:53:41 [pool-1-thread-2] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-2] Navigated to opinion page
+2024-12-23 16:53:42 [pool-1-thread-2] INFO  c.s.services.ArticleScrapperService - No of articles fetched: 27
+2024-12-23 16:53:42 [pool-1-thread-2] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: firefox on windows (c6862b1aaf63babdb6113bed6d1f4bdc2f470bda)] -> tag name: article]
+2024-12-23 16:53:42 [pool-1-thread-2] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : La descarbonización se frena
+2024-12-23 16:53:43 [pool-1-thread-4] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-4] Navigated to opinion page
+2024-12-23 16:53:43 [pool-1-thread-4] INFO  c.s.services.ArticleScrapperService - No of articles fetched: 27
+2024-12-23 16:53:43 [pool-1-thread-4] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: chrome on ANDROID (87ef2ecbef0ed8a8409237cfc217731346504762)] -> tag name: article]
+2024-12-23 16:53:44 [pool-1-thread-4] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : La descarbonización se frena
+2024-12-23 16:53:45 [pool-1-thread-5] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-5] Navigated to opinion page
+2024-12-23 16:53:45 [pool-1-thread-5] INFO  c.s.services.ArticleScrapperService - No of articles fetched: 27
+2024-12-23 16:53:45 [pool-1-thread-5] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: chrome on ANDROID (95fc806cfb64cc4bdf10584f9b4c64246d68f1f6)] -> tag name: article]
+2024-12-23 16:53:45 [pool-1-thread-2] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:53:45 [pool-1-thread-2] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"Decarbonization slows down"}}}
+2024-12-23 16:53:45 [pool-1-thread-2] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-2] Parsed article no: 1 with title: La descarbonización se frena
+2024-12-23 16:53:45 [pool-1-thread-2] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: firefox on windows (c6862b1aaf63babdb6113bed6d1f4bdc2f470bda)] -> tag name: article]
+2024-12-23 16:53:45 [pool-1-thread-2] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : Desidia hacia la violencia sexual
+2024-12-23 16:53:46 [pool-1-thread-5] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : La descarbonización se frena
+2024-12-23 16:53:46 [pool-1-thread-4] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:53:46 [pool-1-thread-4] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"Decarbonization slows down"}}}
+2024-12-23 16:53:46 [pool-1-thread-4] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-4] Parsed article no: 1 with title: La descarbonización se frena
+2024-12-23 16:53:46 [pool-1-thread-4] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: chrome on ANDROID (87ef2ecbef0ed8a8409237cfc217731346504762)] -> tag name: article]
+2024-12-23 16:53:47 [pool-1-thread-4] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : Desidia hacia la violencia sexual
+2024-12-23 16:53:48 [pool-1-thread-2] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:53:48 [pool-1-thread-2] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"Disdain towards sexual violence"}}}
+2024-12-23 16:53:48 [pool-1-thread-2] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-2] Parsed article no: 2 with title: Desidia hacia la violencia sexual
+2024-12-23 16:53:48 [pool-1-thread-2] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: firefox on windows (c6862b1aaf63babdb6113bed6d1f4bdc2f470bda)] -> tag name: article]
+2024-12-23 16:53:48 [pool-1-thread-5] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:53:48 [pool-1-thread-5] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"Decarbonization slows down"}}}
+2024-12-23 16:53:48 [pool-1-thread-5] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-5] Parsed article no: 1 with title: La descarbonización se frena
+2024-12-23 16:53:48 [pool-1-thread-5] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: chrome on ANDROID (95fc806cfb64cc4bdf10584f9b4c64246d68f1f6)] -> tag name: article]
+2024-12-23 16:53:48 [pool-1-thread-2] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : En Navidad, volver a Schütz
+2024-12-23 16:53:48 [pool-1-thread-4] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:53:48 [pool-1-thread-4] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"Disdain towards sexual violence"}}}
+2024-12-23 16:53:48 [pool-1-thread-4] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-4] Parsed article no: 2 with title: Desidia hacia la violencia sexual
+2024-12-23 16:53:48 [pool-1-thread-4] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: chrome on ANDROID (87ef2ecbef0ed8a8409237cfc217731346504762)] -> tag name: article]
+2024-12-23 16:53:48 [pool-1-thread-5] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : Desidia hacia la violencia sexual
+2024-12-23 16:53:49 [pool-1-thread-4] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : En Navidad, volver a Schütz
+2024-12-23 16:53:49 [pool-1-thread-1] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-1] Navigated to opinion page
+2024-12-23 16:53:50 [pool-1-thread-1] INFO  c.s.services.ArticleScrapperService - No of articles fetched: 27
+2024-12-23 16:53:50 [pool-1-thread-1] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: chrome on windows (41e18748ee62414743b9872f12a2155b96bea75a)] -> tag name: article]
+2024-12-23 16:53:50 [pool-1-thread-2] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:53:50 [pool-1-thread-2] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"At Christmas, return to Sch\u00fctz"}}}
+2024-12-23 16:53:50 [pool-1-thread-2] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-2] Parsed article no: 3 with title: En Navidad, volver a Schütz
+2024-12-23 16:53:50 [pool-1-thread-2] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: firefox on windows (c6862b1aaf63babdb6113bed6d1f4bdc2f470bda)] -> tag name: article]
+2024-12-23 16:53:50 [pool-1-thread-5] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:53:50 [pool-1-thread-5] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"Disdain towards sexual violence"}}}
+2024-12-23 16:53:50 [pool-1-thread-5] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-5] Parsed article no: 2 with title: Desidia hacia la violencia sexual
+2024-12-23 16:53:50 [pool-1-thread-5] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: chrome on ANDROID (95fc806cfb64cc4bdf10584f9b4c64246d68f1f6)] -> tag name: article]
+2024-12-23 16:53:50 [pool-1-thread-1] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : La descarbonización se frena
+2024-12-23 16:53:50 [pool-1-thread-2] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : La bondad de un robot salvaje
+2024-12-23 16:53:51 [pool-1-thread-5] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : En Navidad, volver a Schütz
+2024-12-23 16:53:51 [pool-1-thread-4] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:53:51 [pool-1-thread-4] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"At Christmas, return to Sch\u00fctz"}}}
+2024-12-23 16:53:51 [pool-1-thread-4] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-4] Parsed article no: 3 with title: En Navidad, volver a Schütz
+2024-12-23 16:53:51 [pool-1-thread-4] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: chrome on ANDROID (87ef2ecbef0ed8a8409237cfc217731346504762)] -> tag name: article]
+2024-12-23 16:53:51 [pool-1-thread-3] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-3] Navigated to website: https://elpais.com/
+2024-12-23 16:53:52 [pool-1-thread-4] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : La bondad de un robot salvaje
+2024-12-23 16:53:52 [pool-1-thread-1] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:53:52 [pool-1-thread-1] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"Decarbonization slows down"}}}
+2024-12-23 16:53:52 [pool-1-thread-1] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-1] Parsed article no: 1 with title: La descarbonización se frena
+2024-12-23 16:53:52 [pool-1-thread-1] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: chrome on windows (41e18748ee62414743b9872f12a2155b96bea75a)] -> tag name: article]
+2024-12-23 16:53:52 [pool-1-thread-1] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : Desidia hacia la violencia sexual
+2024-12-23 16:53:52 [pool-1-thread-2] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:53:52 [pool-1-thread-2] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"The kindness of a wild robot"}}}
+2024-12-23 16:53:52 [pool-1-thread-2] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-2] Parsed article no: 4 with title: La bondad de un robot salvaje
+2024-12-23 16:53:52 [pool-1-thread-2] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: firefox on windows (c6862b1aaf63babdb6113bed6d1f4bdc2f470bda)] -> tag name: article]
+2024-12-23 16:53:52 [pool-1-thread-2] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : ‘Las tres fronteras’
+2024-12-23 16:53:52 [pool-1-thread-5] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:53:52 [pool-1-thread-5] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"At Christmas, return to Sch\u00fctz"}}}
+2024-12-23 16:53:52 [pool-1-thread-5] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-5] Parsed article no: 3 with title: En Navidad, volver a Schütz
+2024-12-23 16:53:52 [pool-1-thread-5] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: chrome on ANDROID (95fc806cfb64cc4bdf10584f9b4c64246d68f1f6)] -> tag name: article]
+2024-12-23 16:53:53 [pool-1-thread-5] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : La bondad de un robot salvaje
+2024-12-23 16:53:53 [pool-1-thread-4] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:53:53 [pool-1-thread-4] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"The kindness of a wild robot"}}}
+2024-12-23 16:53:53 [pool-1-thread-4] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-4] Parsed article no: 4 with title: La bondad de un robot salvaje
+2024-12-23 16:53:53 [pool-1-thread-4] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: chrome on ANDROID (87ef2ecbef0ed8a8409237cfc217731346504762)] -> tag name: article]
+2024-12-23 16:53:54 [pool-1-thread-1] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:53:54 [pool-1-thread-1] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"Disdain towards sexual violence"}}}
+2024-12-23 16:53:54 [pool-1-thread-1] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-1] Parsed article no: 2 with title: Desidia hacia la violencia sexual
+2024-12-23 16:53:54 [pool-1-thread-1] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: chrome on windows (41e18748ee62414743b9872f12a2155b96bea75a)] -> tag name: article]
+2024-12-23 16:53:54 [pool-1-thread-4] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : ‘Las tres fronteras’
+2024-12-23 16:53:54 [pool-1-thread-1] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : En Navidad, volver a Schütz
+2024-12-23 16:53:54 [pool-1-thread-2] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:53:54 [pool-1-thread-2] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"'The three borders'"}}}
+2024-12-23 16:53:54 [pool-1-thread-2] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-2] Parsed article no: 5 with title: ‘Las tres fronteras’
+2024-12-23 16:53:54 [pool-1-thread-2] INFO  c.s.services.ArticleScrapperService - Image downloaded successfully to: images/
+2024-12-23 16:53:54 [pool-1-thread-2] INFO  c.s.services.ArticleScrapperService - Image downloaded successfully to: images/
+2024-12-23 16:53:54 [pool-1-thread-2] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-2] Article[title='La descarbonización se frena', content='El desproporcionado consumo de petróleo en el transporte es un lastre para los objetivos climáticos de España', translatedTitle='Decarbonization slows down']
+2024-12-23 16:53:54 [pool-1-thread-2] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-2] Article[title='Desidia hacia la violencia sexual', content='Algunas comunidades autónomas han sido incapaces de poner en marcha centros de atención a víctimas que exige la ley y paga la UE', translatedTitle='Disdain towards sexual violence']
+2024-12-23 16:53:54 [pool-1-thread-2] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-2] Article[title='En Navidad, volver a Schütz', content='La música del más grande compositor alemán del XVII es la que mejor refleja lo que celebramos en verdad en estas fechas', translatedTitle='At Christmas, return to Schütz']
+2024-12-23 16:53:54 [pool-1-thread-2] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-2] Article[title='La bondad de un robot salvaje', content='Uno de los retos que deberemos afrontar es programar la inteligencia artificial con unos principios éticos comunes', translatedTitle='The kindness of a wild robot']
+2024-12-23 16:53:54 [pool-1-thread-2] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-2] Article[title='‘Las tres fronteras’', content='Este proyecto fotográfico documenta los límites entre Malí, Níger y Burkina Faso, epicentro del conflicto que devasta el Sahel', translatedTitle=''The three borders'']
+2024-12-23 16:53:55 [pool-1-thread-5] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:53:55 [pool-1-thread-5] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"The kindness of a wild robot"}}}
+2024-12-23 16:53:55 [pool-1-thread-5] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-5] Parsed article no: 4 with title: La bondad de un robot salvaje
+2024-12-23 16:53:55 [pool-1-thread-5] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: chrome on ANDROID (95fc806cfb64cc4bdf10584f9b4c64246d68f1f6)] -> tag name: article]
+2024-12-23 16:53:55 [pool-1-thread-5] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : ‘Las tres fronteras’
+2024-12-23 16:53:56 [pool-1-thread-4] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:53:56 [pool-1-thread-4] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"'The three borders'"}}}
+2024-12-23 16:53:56 [pool-1-thread-4] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-4] Parsed article no: 5 with title: ‘Las tres fronteras’
+2024-12-23 16:53:56 [pool-1-thread-1] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:53:56 [pool-1-thread-1] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"At Christmas, return to Sch\u00fctz"}}}
+2024-12-23 16:53:56 [pool-1-thread-1] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-1] Parsed article no: 3 with title: En Navidad, volver a Schütz
+2024-12-23 16:53:56 [pool-1-thread-1] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: chrome on windows (41e18748ee62414743b9872f12a2155b96bea75a)] -> tag name: article]
+2024-12-23 16:53:56 [pool-1-thread-4] INFO  c.s.services.ArticleScrapperService - Image downloaded successfully to: images/
+2024-12-23 16:53:56 [pool-1-thread-4] INFO  c.s.services.ArticleScrapperService - Image downloaded successfully to: images/
+2024-12-23 16:53:56 [pool-1-thread-4] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-4] Article[title='La descarbonización se frena', content='El desproporcionado consumo de petróleo en el transporte es un lastre para los objetivos climáticos de España', translatedTitle='Decarbonization slows down']
+2024-12-23 16:53:56 [pool-1-thread-4] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-4] Article[title='Desidia hacia la violencia sexual', content='Algunas comunidades autónomas han sido incapaces de poner en marcha centros de atención a víctimas que exige la ley y paga la UE', translatedTitle='Disdain towards sexual violence']
+2024-12-23 16:53:56 [pool-1-thread-4] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-4] Article[title='En Navidad, volver a Schütz', content='La música del más grande compositor alemán del XVII es la que mejor refleja lo que celebramos en verdad en estas fechas', translatedTitle='At Christmas, return to Schütz']
+2024-12-23 16:53:56 [pool-1-thread-4] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-4] Article[title='La bondad de un robot salvaje', content='Uno de los retos que deberemos afrontar es programar la inteligencia artificial con unos principios éticos comunes', translatedTitle='The kindness of a wild robot']
+2024-12-23 16:53:56 [pool-1-thread-4] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-4] Article[title='‘Las tres fronteras’', content='Este proyecto fotográfico documenta los límites entre Malí, Níger y Burkina Faso, epicentro del conflicto que devasta el Sahel', translatedTitle=''The three borders'']
+2024-12-23 16:53:56 [pool-1-thread-1] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : La bondad de un robot salvaje
+2024-12-23 16:53:58 [pool-1-thread-5] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:53:58 [pool-1-thread-5] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"'The three borders'"}}}
+2024-12-23 16:53:58 [pool-1-thread-5] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-5] Parsed article no: 5 with title: ‘Las tres fronteras’
+2024-12-23 16:53:58 [pool-1-thread-5] INFO  c.s.services.ArticleScrapperService - Image downloaded successfully to: images/
+2024-12-23 16:53:58 [pool-1-thread-5] INFO  c.s.services.ArticleScrapperService - Image downloaded successfully to: images/
+2024-12-23 16:53:58 [pool-1-thread-5] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-5] Article[title='La descarbonización se frena', content='El desproporcionado consumo de petróleo en el transporte es un lastre para los objetivos climáticos de España', translatedTitle='Decarbonization slows down']
+2024-12-23 16:53:58 [pool-1-thread-5] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-5] Article[title='Desidia hacia la violencia sexual', content='Algunas comunidades autónomas han sido incapaces de poner en marcha centros de atención a víctimas que exige la ley y paga la UE', translatedTitle='Disdain towards sexual violence']
+2024-12-23 16:53:58 [pool-1-thread-5] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-5] Article[title='En Navidad, volver a Schütz', content='La música del más grande compositor alemán del XVII es la que mejor refleja lo que celebramos en verdad en estas fechas', translatedTitle='At Christmas, return to Schütz']
+2024-12-23 16:53:58 [pool-1-thread-5] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-5] Article[title='La bondad de un robot salvaje', content='Uno de los retos que deberemos afrontar es programar la inteligencia artificial con unos principios éticos comunes', translatedTitle='The kindness of a wild robot']
+2024-12-23 16:53:58 [pool-1-thread-5] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-5] Article[title='‘Las tres fronteras’', content='Este proyecto fotográfico documenta los límites entre Malí, Níger y Burkina Faso, epicentro del conflicto que devasta el Sahel', translatedTitle=''The three borders'']
+2024-12-23 16:53:58 [pool-1-thread-1] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:53:58 [pool-1-thread-1] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"The kindness of a wild robot"}}}
+2024-12-23 16:53:58 [pool-1-thread-1] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-1] Parsed article no: 4 with title: La bondad de un robot salvaje
+2024-12-23 16:53:58 [pool-1-thread-1] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: chrome on windows (41e18748ee62414743b9872f12a2155b96bea75a)] -> tag name: article]
+2024-12-23 16:53:58 [pool-1-thread-1] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : ‘Las tres fronteras’
+2024-12-23 16:53:59 [pool-1-thread-3] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-3] Navigated to opinion page
+2024-12-23 16:53:59 [pool-1-thread-3] INFO  c.s.services.ArticleScrapperService - No of articles fetched: 27
+2024-12-23 16:53:59 [pool-1-thread-3] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: chrome on windows (3d7a1c262d5f9dd409b422241767bc7ffb08533d)] -> tag name: article]
+2024-12-23 16:54:00 [pool-1-thread-1] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:54:00 [pool-1-thread-1] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"'The three borders'"}}}
+2024-12-23 16:54:00 [pool-1-thread-1] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-1] Parsed article no: 5 with title: ‘Las tres fronteras’
+2024-12-23 16:54:00 [pool-1-thread-1] INFO  c.s.services.ArticleScrapperService - Image downloaded successfully to: images/
+2024-12-23 16:54:00 [pool-1-thread-1] INFO  c.s.services.ArticleScrapperService - Image downloaded successfully to: images/
+2024-12-23 16:54:00 [pool-1-thread-1] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-1] Article[title='La descarbonización se frena', content='El desproporcionado consumo de petróleo en el transporte es un lastre para los objetivos climáticos de España', translatedTitle='Decarbonization slows down']
+2024-12-23 16:54:00 [pool-1-thread-1] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-1] Article[title='Desidia hacia la violencia sexual', content='Algunas comunidades autónomas han sido incapaces de poner en marcha centros de atención a víctimas que exige la ley y paga la UE', translatedTitle='Disdain towards sexual violence']
+2024-12-23 16:54:00 [pool-1-thread-1] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-1] Article[title='En Navidad, volver a Schütz', content='La música del más grande compositor alemán del XVII es la que mejor refleja lo que celebramos en verdad en estas fechas', translatedTitle='At Christmas, return to Schütz']
+2024-12-23 16:54:00 [pool-1-thread-1] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-1] Article[title='La bondad de un robot salvaje', content='Uno de los retos que deberemos afrontar es programar la inteligencia artificial con unos principios éticos comunes', translatedTitle='The kindness of a wild robot']
+2024-12-23 16:54:00 [pool-1-thread-1] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-1] Article[title='‘Las tres fronteras’', content='Este proyecto fotográfico documenta los límites entre Malí, Níger y Burkina Faso, epicentro del conflicto que devasta el Sahel', translatedTitle=''The three borders'']
+2024-12-23 16:54:00 [pool-1-thread-3] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : La descarbonización se frena
+2024-12-23 16:54:02 [pool-1-thread-3] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:54:02 [pool-1-thread-3] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"Decarbonization slows down"}}}
+2024-12-23 16:54:02 [pool-1-thread-3] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-3] Parsed article no: 1 with title: La descarbonización se frena
+2024-12-23 16:54:02 [pool-1-thread-3] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: chrome on windows (3d7a1c262d5f9dd409b422241767bc7ffb08533d)] -> tag name: article]
+2024-12-23 16:54:02 [pool-1-thread-3] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : Desidia hacia la violencia sexual
+2024-12-23 16:54:04 [pool-1-thread-3] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:54:04 [pool-1-thread-3] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"Disdain towards sexual violence"}}}
+2024-12-23 16:54:04 [pool-1-thread-3] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-3] Parsed article no: 2 with title: Desidia hacia la violencia sexual
+2024-12-23 16:54:04 [pool-1-thread-3] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: chrome on windows (3d7a1c262d5f9dd409b422241767bc7ffb08533d)] -> tag name: article]
+2024-12-23 16:54:07 [pool-1-thread-3] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : En Navidad, volver a Schütz
+2024-12-23 16:54:09 [pool-1-thread-3] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:54:09 [pool-1-thread-3] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"At Christmas, return to Sch\u00fctz"}}}
+2024-12-23 16:54:09 [pool-1-thread-3] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-3] Parsed article no: 3 with title: En Navidad, volver a Schütz
+2024-12-23 16:54:09 [pool-1-thread-3] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: chrome on windows (3d7a1c262d5f9dd409b422241767bc7ffb08533d)] -> tag name: article]
+2024-12-23 16:54:09 [pool-1-thread-3] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : La bondad de un robot salvaje
+2024-12-23 16:54:13 [pool-1-thread-3] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:54:13 [pool-1-thread-3] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"The kindness of a wild robot"}}}
+2024-12-23 16:54:13 [pool-1-thread-3] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-3] Parsed article no: 4 with title: La bondad de un robot salvaje
+2024-12-23 16:54:13 [pool-1-thread-3] INFO  c.s.services.ArticleScrapperService - Failure checker[[RemoteWebDriver: chrome on windows (3d7a1c262d5f9dd409b422241767bc7ffb08533d)] -> tag name: article]
+2024-12-23 16:54:15 [pool-1-thread-3] INFO  c.s.utils.GoogleTranslateUtil - Calling Google Translate API to translate String : ‘Las tres fronteras’
+2024-12-23 16:54:17 [pool-1-thread-3] INFO  c.s.utils.GoogleTranslateUtil - API returned response with status code: 200
+2024-12-23 16:54:17 [pool-1-thread-3] INFO  c.s.utils.GoogleTranslateUtil -  API Response Body{"data":{"translations":{"translatedText":"'The three borders'"}}}
+2024-12-23 16:54:17 [pool-1-thread-3] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-3] Parsed article no: 5 with title: ‘Las tres fronteras’
+2024-12-23 16:54:17 [pool-1-thread-3] INFO  c.s.services.ArticleScrapperService - Image downloaded successfully to: images/
+2024-12-23 16:54:18 [pool-1-thread-3] INFO  c.s.services.ArticleScrapperService - Image downloaded successfully to: images/
+2024-12-23 16:54:18 [pool-1-thread-3] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-3] Article[title='La descarbonización se frena', content='El desproporcionado consumo de petróleo en el transporte es un lastre para los objetivos climáticos de España', translatedTitle='Decarbonization slows down']
+2024-12-23 16:54:18 [pool-1-thread-3] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-3] Article[title='Desidia hacia la violencia sexual', content='Algunas comunidades autónomas han sido incapaces de poner en marcha centros de atención a víctimas que exige la ley y paga la UE', translatedTitle='Disdain towards sexual violence']
+2024-12-23 16:54:18 [pool-1-thread-3] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-3] Article[title='En Navidad, volver a Schütz', content='La música del más grande compositor alemán del XVII es la que mejor refleja lo que celebramos en verdad en estas fechas', translatedTitle='At Christmas, return to Schütz']
+2024-12-23 16:54:18 [pool-1-thread-3] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-3] Article[title='La bondad de un robot salvaje', content='Uno de los retos que deberemos afrontar es programar la inteligencia artificial con unos principios éticos comunes', translatedTitle='The kindness of a wild robot']
+2024-12-23 16:54:18 [pool-1-thread-3] INFO  c.s.services.ArticleScrapperService - [Thread: pool-1-thread-3] Article[title='‘Las tres fronteras’', content='Este proyecto fotográfico documenta los límites entre Malí, Níger y Burkina Faso, epicentro del conflicto que devasta el Sahel', translatedTitle=''The three borders'']
