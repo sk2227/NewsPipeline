@@ -31,7 +31,7 @@ public class HeaderAnalyzationUtil {
 
         System.out.println("List of repeated words with count greater than 2:");
         long count = wordCountMap.entrySet().stream()
-                .filter(entry -> entry.getValue() >= 2)
+                .filter(entry -> entry.getValue() > 2)
                 .peek(entry -> System.out.println(entry.getKey() + ": " + entry.getValue())) // Print the words and counts
                 .count();
 

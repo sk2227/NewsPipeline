@@ -75,6 +75,8 @@ public class ArticleScrapperService {
             for (WebElement article : articles) {
                 if (count >= 5) break;
                 try {
+
+                    logger.info(String.valueOf("Failure checker" + article));
                     WebElement titleElement = article.findElement(By.cssSelector("h2.c_t a"));
                     String title = titleElement.getText();
                     String summary = article.findElement(By.cssSelector("p.c_d")).getText();
