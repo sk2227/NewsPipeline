@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.*;
@@ -20,16 +21,16 @@ import org.slf4j.LoggerFactory;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.concurrent.ConcurrentLinkedQueue;
 
 
 public class ArticleScrapperService {
 
     private static final Logger logger = LoggerFactory.getLogger(ArticleScrapperService.class);
-    private static final RateLimiter rateLimiter = new RateLimiter(5, 1000); // 5 requests per second
 
     private WebDriver driver;
 
-    // Constructor to initialize WebDriver
+    //to test
     public ArticleScrapperService() {
         System.setProperty("webdriver.chrome.driver", "C:\\chromedriver-win64\\chromedriver.exe");
         System.setProperty("webdriver.chrome.driver.disable-manager", "true");
@@ -39,13 +40,17 @@ public class ArticleScrapperService {
         driver = new ChromeDriver(options);
     }
 
-    // Constructor with an external WebDriver
+    // For browserstack
     public ArticleScrapperService(WebDriver driver) {
         this.driver = driver;
     }
 
+
     public void fetchArticles() {
         try {
+
+            //selenium to navigate to website
+
             driver.get("https://elpais.com/");
             logger.info("[Thread: {}] Navigated to website: https://elpais.com/", Thread.currentThread().getName());
 
@@ -60,8 +65,10 @@ public class ArticleScrapperService {
 
             wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.tagName("article"), 10));
 
+            //parsing articles
             List<WebElement> articles = driver.findElements(By.tagName("article"));
-            List<Article> articleList = new ArrayList<>();
+            logger.info("No of articles fetched: " + articles.stream().count());
+            ConcurrentLinkedQueue<Article> articleList = new ConcurrentLinkedQueue<>();
             List<String> imgURLs = new ArrayList<>();
             int count = 0;
 
@@ -77,24 +84,18 @@ public class ArticleScrapperService {
                         imgURLs.add(imgElements.get(0).getAttribute("src"));
                     }
 
-                    // Apply rate limiting for the API call
-                    if (rateLimiter.acquire()) {
-                        String translatedText = GoogleTranslateUtil.translateText(title);
-                        articleList.add(new Article(title, summary, translatedText));
-                        logger.info("[Thread: {}] Parsed article no: {} with title: {}", Thread.currentThread().getName(), count + 1, title);
-                    } else {
-                        logger.warn("[Thread: {}] Rate limit reached. Retrying...", Thread.currentThread().getName());
-                        Thread.sleep(100); // Delay and retry
-                        count--; // Don't increment count if rate-limited
-                    }
-
+                    String translatedText = GoogleTranslateUtil.translateText(title);
+                    articleList.add(new Article(title, summary, translatedText));
+                    logger.info("[Thread: {}] Parsed article no: {} with title: {}", Thread.currentThread().getName(), count + 1, title);
                     count++;
+
                 } catch (Exception e) {
                     logger.warn("[Thread: {}] Error parsing an article. Skipping...", Thread.currentThread().getName(), e);
                 }
             }
 
-            // Download images and log the results
+
+            //Download images
             ImageDownloadUtil imgd = new ImageDownloadUtil();
             imgd.downloadImage(imgURLs);
 

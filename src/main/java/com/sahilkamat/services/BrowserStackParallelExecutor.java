@@ -21,22 +21,8 @@ public class BrowserStackParallelExecutor {
                 BrowserCapabilities.getDesktopCapabilities("Windows", "10", "Chrome", "latest"),
                 BrowserCapabilities.getDesktopCapabilities("Windows", "10", "Firefox", "latest"),
                 BrowserCapabilities.getDesktopCapabilities("Windows", "10", "Chrome", "latest"),
-//                BrowserCapabilities.getDesktopCapabilities("Windows", "10", "Firefox", "latest"),
-//                BrowserCapabilities.getDesktopCapabilities("Windows", "10", "Chrome", "latest"),
-                //BrowserCapabilities.getDesktopCapabilities("OS X", "Sequoia", "Safari", "latest"),
                 BrowserCapabilities.getMobileCapabilities("Samsung Galaxy S22", "13"),
-                //BrowserCapabilities.getMobileCapabilities("iPhone 14", "16"),
                 BrowserCapabilities.getMobileCapabilities("Samsung Galaxy S22", "13")
-//                BrowserCapabilities.getMobileCapabilities("Samsung Galaxy S22", "13"),
-//                BrowserCapabilities.getMobileCapabilities("Samsung Galaxy S22", "13"),
-//                BrowserCapabilities.getMobileCapabilities("Samsung Galaxy S22", "13"),
-//                BrowserCapabilities.getMobileCapabilities("Samsung Galaxy S22", "13")
-                //BrowserCapabilities.getMobileCapabilities("iPhone 14", "16"),
-                //BrowserCapabilities.getMobileCapabilities("iPhone 14", "16"),
-                //BrowserCapabilities.getMobileCapabilities("iPhone 14", "16"),
-                //BrowserCapabilities.getMobileCapabilities("iPhone 14", "16"),
-                //BrowserCapabilities.getMobileCapabilities("iPhone 14", "16"),
-
         };
 
 
@@ -46,10 +32,8 @@ public class BrowserStackParallelExecutor {
             executorService.submit(() -> {
                 WebDriver driver = null;
                 try {
-                    // Initialize BrowserStack WebDriver
                     driver = new RemoteWebDriver(new URL(hubUrl), cap);
 
-                    // Call the scraping workflow
                     ArticleScrapperService scrapperService = new ArticleScrapperService(driver);
                     scrapperService.fetchArticles();
 

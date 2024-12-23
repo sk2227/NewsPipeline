@@ -37,10 +37,10 @@ public class Article {
 
     @Override
     public String toString() {
-        return "Article{" +
+        return "Article[" +
                 "title='" + title + '\'' +
                 ", content='" + content + '\'' +
                 ", translatedTitle='" + translatedTitle + '\'' +
-                '}';
+                ']';
     }
 }

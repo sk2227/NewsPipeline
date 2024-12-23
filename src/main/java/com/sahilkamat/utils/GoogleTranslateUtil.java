@@ -17,9 +17,9 @@ public class GoogleTranslateUtil {
 
     private static final Logger logger = LoggerFactory.getLogger(GoogleTranslateUtil.class);
 
-    private static final String API_URL = "https://google-translator9.p.rapidapi.com/v2";
-    private static final String API_KEY = "d13316f8femsh0756541f5a74c24p1ef07fjsn9950aba11f8e";
-    private static final String API_HOST = "google-translator9.p.rapidapi.com";
+    private static final String API_URL = ConfigLoader.get("googleTranslate.api_url");
+    private static final String API_KEY = ConfigLoader.get("googleTranslate.api_key");
+    private static final String API_HOST = ConfigLoader.get("googleTranslate.api_host");
     private static String sourceLang="es";
     private static String targetLang="en";
 
@@ -31,7 +31,7 @@ public class GoogleTranslateUtil {
         try{
 
             String payload = String.format(
-                    "{\"q\":\"%s\",\"source\":\"%s\",\"target\":\"%s\",\"format\":\"text\"}",
+                    "{\"q\":\"%s\",\"source\":\"%s\",\"target\":\"%s\"}",
                     text, sourceLang, targetLang
             );
 
@@ -50,9 +50,12 @@ public class GoogleTranslateUtil {
             logger.info(" API Response Body" + response.body());
 
             if (response.statusCode() == 200) {
-                // Parse the JSON response
+                // Parse the JSON response eg: {"data":{"translations":{"translatedText":"'The three borders'"}}}
                 JSONObject jsonResponse = new JSONObject(response.body());
-                return jsonResponse.getJSONObject("data").getJSONArray("translations").getJSONObject(0).getString("translatedText");
+
+                return jsonResponse.getJSONObject("data")
+                        .getJSONObject("translations")
+                        .getString("translatedText");
             } else {
                 System.err.println("Error: " + response.statusCode() + " - " + response.body());
                 return "";
